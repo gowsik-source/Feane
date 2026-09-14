@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Feane</title>
+    <link rel="icon" type="image/x-icon" href="./assets/cooking.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cover_section">
+        <div class="navigation_bar">
+            <div class="logo">
+                <h1><a href="home">Feane</a></h1>
+            </div>
+            <div class="horizontal_bar">
+                <label for="check"><i class="fa-solid fa-bars bar_icon"></i> </label>
+                <label for="check"><i class="fa-solid fa-xmark x_icon"></i></label>
+            </div>
+            <div class="navigation">
+                <ul class="nav-align">
+                    <li><a href="home" class="nav-style">HOME</a></li>
+                    <li><a href="menu" class="nav-style">MENU</a></li>
+                    <li><a href="about" class="nav-style">ABOUT</a></li>
+                    <li><a href="book_table" class="nav-style">BOOK TABLE</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <a href="/"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+                <a href="/"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                <a href="/"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="order-online">
+                <button class="button">Order Online</button>
+            </div>
+        </div>
+        <input type="checkbox" name="check" id="check" style="display: none;" oninput="changecheck()">
+        <div class="responsive_nav">
+            <div class="navigation_for_responsive">
+                <ul class="nav-align_for_responsive">
+                    <li><a href="home" class="nav-style">HOME</a></li>
+                    <li><a href="home" class="nav-style">MENU</a></li>
+                    <li><a href="home" class="nav-style">ABOUT</a></li>
+                    <li><a href="home" class="nav-style">BOOK TABLE</a></li>
+                </ul>
+            </div>
+            <div class="responsive_icon_and_order">
+                <div class="icon_for_responsive">
+                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                </div>
+                <div class="order-online_for_responsive">
+                    <button class="button">Order Online</button>
+                </div>
+            </div>
+        </div>
+        <div class="contain_cover">
+            <div id="owl-carousel-cover" class="owl-carousel owl-theme" data-aos="fade-right">
+                <div class="item_cover">
+                    <div class="content_container">
+                        <div class="first_title">
+                            <h1>Fast Food Restaurant</h1>
+                        </div>
+                        <div class="first_description">
+                            <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad
+                                mollitia laborum quam
+                                quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore,
+                                iste magni quos
+                                nihil
+                                ducimus libero ipsam.</p>
+                        </div>
+                        <div class="first_ordernow_button">
+                            <button class="button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_cover">
+                    <div class="content_container">
+                        <div class="first_title">
+                            <h1>Fast Food Restaurant</h1>
+                        </div>
+                        <div class="first_description">
+                            <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad
+                                mollitia laborum quam
+                                quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore,
+                                iste magni quos
+                                nihil
+                                ducimus libero ipsam.</p>
+                        </div>
+                        <div class="first_ordernow_button">
+                            <button class="button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_cover">
+                    <div class="content_container">
+                        <div class="first_title">
+                            <h1>Fast Food Restaurant</h1>
+                        </div>
+                        <div class="first_description">
+                            <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad
+                                mollitia laborum quam
+                                quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore,
+                                iste magni quos
+                                nihil
+                                ducimus libero ipsam.</p>
+                        </div>
+                        <div class="first_ordernow_button">
+                            <button class="button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="display">
+            <div class="box" data-aos="zoom-in">
+                <div class="image">
+                    <img src="./assets/burger.jpg" class="img">
+                </div>
+                <div class="content">
+                    <div class="tasty">
+                        <h3>Tasty Thursday</h3>
+                    </div>
+                    <div class="off">
+                        <h1>20% off</h1>
+                    </div>
+                    <div>
+                        <button class="button">Order Now
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-aos="zoom-in">
+                <div class="image">
+                    <img src="./assets/pizza.jpg" class="img">
+                </div>
+                <div class="content">
+                    <div class="tasty">
+                        <h3>Tasty Thursday</h3>
+                    </div>
+                    <div class="off">
+                        <h1>20% off</h1>
+                    </div>
+                    <div>
+                        <button class="button">Order Now
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topic" data-aos="zoom-in">
+            <h1>Our Menu</h1>
+        </div>
+        <div class="category">
+            <button class="category-all">All</button><button class="category-button"> Burger</button><button
+                class="category-button"> Pizza</button><button class="category-button"> Pasta </button><button
+                class="category-button"> Fries</button>
+        </div>
+        <div class="menu_container">
+            <div class="display1" data-aos="flip-left">
+                <div class="box1">
+                    <img src="./assets/pngegg.png" class="menu_image">
+                </div>
+                <div class="box2">
+                    <div class="box2_title">
+                        <h2>Delicious Pizza</h2>
+                    </div>
+                    <div class="box2_content">
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
+                            repellendus sed eaque</p>
+                    </div>
+                    <div class="symbol_and_button">
+                        <div class="symbol">
+                            <p>$20</p>
+                        </div>
+                        <div>
+                            <button class="menu_button">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display1" data-aos="flip-left">
+                <div class="box1">
+                    <img src="./assets/pizza.jpg" class="menu_image">
+                </div>
+                <div class="box2">
+                    <div class="box2_title">
+                        <h2>Delicious Pizza</h2>
+                    </div>
+                    <div class="box2_content">
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
+                            repellendus sed eaque</p>
+                    </div>
+                    <div class="symbol_and_button">
+                        <div class="symbol">
+                            <p>$20</p>
+                        </div>
+                        <div>
+                            <button class="menu_button">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display1" data-aos="flip-left">
+                <div class="box1">
+                    <img src="./assets/burger.jpg" class="menu_image">
+                </div>
+                <div class="box2">
+                    <div class="box2_title">
+                        <h2>Delicious Burger</h2>
+                    </div>
+                    <div class="box2_content">
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
+                            repellendus sed eaque</p>
+                    </div>
+                    <div class="symbol_and_button">
+                        <div class="symbol">
+                            <p>$15</p>
+                        </div>
+                        <div>
+                            <button class="menu_button">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_container">
+            <div class="display1" data-aos="flip-left">
+                <div class="box1">
+                    <img src="./assets/pngegg.png" class="menu_image">
+                </div>
+                <div class="box2">
+                    <div class="box2_title">
+                        <h2>Delicious Pizza</h2>
+                    </div>
+                    <div class="box2_content">
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
+                            repellendus sed eaque</p>
+                    </div>
+                    <div class="symbol_and_button">
+                        <div class="symbol">
+                            <p>$20</p>
+                        </div>
+                        <div>
+                            <button class="menu_button">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display1" data-aos="flip-left">
+                <div class="box1">
+                    <img src="./assets/pizza.jpg" class="menu_image">
+                </div>
+                <div class="box2">
+                    <div class="box2_title">
+                        <h2>Delicious Pizza</h2>
+                    </div>
+                    <div class="box2_content">
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
+                            repellendus sed eaque</p>
+                    </div>
+                    <div class="symbol_and_button">
+                        <div class="symbol">
+                            <p>$20</p>
+                        </div>
+                        <div>
+                            <button class="menu_button">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display1" data-aos="flip-left">
+                <div class="box1">
+                    <img src="./assets/burger.jpg" class="menu_image">
+                </div>
+                <div class="box2">
+                    <div class="box2_title">
+                        <h2>Delicious Burger</h2>
+                    </div>
+                    <div class="box2_content">
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
+                            repellendus sed eaque</p>
+                    </div>
+                    <div class="symbol_and_button">
+                        <div class="symbol">
+                            <p>$15</p>
+                        </div>
+                        <div>
+                            <button class="menu_button">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_container">
+            <div class="display1" data-aos="flip-left">
+                <div class="box1">
+                    <img src="./assets/pngegg.png" class="menu_image">
+                </div>
+                <div class="box2">
+                    <div class="box2_title">
+                        <h2>Delicious Pizza</h2>
+                    </div>
+                    <div class="box2_content">
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
+                            repellendus sed eaque</p>
+                    </div>
+                    <div class="symbol_and_button">
+                        <div class="symbol">
+                            <p>$20</p>
+                        </div>
+                        <div>
+                            <button class="menu_button">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display1" data-aos="flip-left">
+                <div class="box1">
+                    <img src="./assets/pizza.jpg" class="menu_image">
+                </div>
+                <div class="box2">
+                    <div class="box2_title">
+                        <h2>Delicious Pizza</h2>
+                    </div>
+                    <div class="box2_content">
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
+                            repellendus sed eaque</p>
+                    </div>
+                    <div class="symbol_and_button">
+                        <div class="symbol">
+                            <p>$20</p>
+                        </div>
+                        <div>
+                            <button class="menu_button">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display1" data-aos="flip-left">
+                <div class="box1">
+                    <img src="./assets/burger.jpg" class="menu_image">
+                </div>
+                <div class="box2">
+                    <div class="box2_title">
+                        <h2>Delicious Burger</h2>
+                    </div>
+                    <div class="box2_content">
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
+                            repellendus sed eaque</p>
+                    </div>
+                    <div class="symbol_and_button">
+                        <div class="symbol">
+                            <p>$15</p>
+                        </div>
+                        <div>
+                            <button class="menu_button">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-more" data-aos="zoom-in">
+            <button class="button">View More</button>
+        </div>
+        <div class="mid-portion">
+            <div class="mid-portion-image" data-aos="zoom-in-right">
+                <img src="./assets/burgerr.png" height="500px" width="100%">
+            </div>
+            <div class="mid_portion2" data-aos="zoom-in-left">
+                <div class="mid-portion-heading">
+                    <h1>We Are Feane</h1>
+                </div>
+                <div class="mid-portion-content">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text. All</p>
+                </div>
+                <div class="mid-portion-button">
+                    <button class="button">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="book-a-table" data-aos="zoom-in">
+            <h1>Book A Table</h1>
+        </div>
+        <div class="form">
+            <div class="form_field" data-aos="zoom-in">
+                <form action="">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Your Name" value="" class="form_input">
+                    </div>
+                    <div>
+                        <input type="text" id="number" name="number" placeholder="Phone Number" value=""
+                            class="form_input">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="mail" placeholder="Your Email" value="" class="form_input">
+                    </div>
+                    <div>
+                        <select id="persons" name="persons" class="form_input">
+                            <option value="" disabled selected>how many persons</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="date" id="date" name="date" class="form_input">
+                    </div>
+                </form>
+                <div>
+                    <input type="submit" class="button" value="BOOK NOW">
+                </div>
+            </div>
+            <div class="map" data-aos="zoom-in">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.1115492481845!2d77.39504250865252!3d8.191517001505671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f1405923e1fb%3A0xdded763ce70bbd4d!2sALO%20Info-Tech!5e0!3m2!1sen!2sin!4v1752382928929!5m2!1sen!2sin"
+                    width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="google maps" style="color: white;"></iframe>
+            </div>
+        </div>
+        <div class="review-heading" data-aos="zoom-in">
+            <h1>What Says Our Customers</h1>
+        </div>
+        <div class="carousel_container">
+            <div class="carousel_function">
+                <div id="owl-carousel" class="owl-carousel owl-theme">
+                    <div data-aos="zoom-in">
+                        <div class="item">
+                            <div class="review_box_layout">
+                                <div class="reviewer_feedback_content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium et, ducimus
+                                        quibusdam
+                                        soluta
+                                        dolor aut, nam nobis velit, totam consequuntur perspiciatis.</p>
+                                </div>
+                                <div class="reviewer_name">
+                                    <h3>Mike Hamell</h3>
+                                </div>
+                                <div class="reviewer_name">
+                                    <p>magna aliqua</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviw_image_section">
+                            <div class="image_item">
+                                <img src="./assets/p1.jpg" class="reviewer-image" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <div class="item">
+                            <div class="review_box_layout">
+                                <div class="reviewer_feedback_content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium et, ducimus
+                                        quibusdam
+                                        soluta
+                                        dolor aut, nam nobis velit, totam consequuntur perspiciatis.</p>
+                                </div>
+                                <div class="reviewer_name">
+                                    <h3>Moana Michell</h3>
+                                </div>
+                                <div class="reviewer_name">
+                                    <p>magna aliqua</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviw_image_section">
+                            <div class="image_item">
+                                <img src="./assets/p2.jpg" class="reviewer-image" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <div class="item">
+                            <div class="review_box_layout">
+                                <div class="reviewer-feedback_content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium et, ducimus
+                                        quibusdam
+                                        soluta
+                                        dolor aut, nam nobis velit, totam consequuntur perspiciatis.</p>
+                                </div>
+                                <div class="reviewer_name_head">
+                                    <h3>Mike Hamell</h3>
+                                </div>
+                                <div class="reviewer_name_text">
+                                    <p>magna aliqua</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviw_image_section">
+                            <div class="image_item">
+                                <img src="./assets/p1.jpg" class="reviewer-image" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <div class="item">
+                            <div class="review_box_layout">
+                                <div class="reviewer-feedback1">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium et, ducimus
+                                        quibusdam
+                                        soluta
+                                        dolor aut, nam nobis velit, totam consequuntur perspiciatis.</p>
+                                </div>
+                                <div class="reviewer_name_head">
+                                    <h3>Mike Hamell</h3>
+                                </div>
+                                <div class="reviewer_name_text">
+                                    <p>magna aliqua</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviw_image_section">
+                            <div class="image_item">
+                                <img src="./assets/p2.jpg" class="reviewer-image" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-portion">
+            <div class="last-display1" data-aos="fade-down">
+                <div class="last-display1-head">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>Location
+                </div>
+                <div class="call">
+                    <i class="fa-solid fa-phone"></i>Call +01 1234567890
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>demo@gmail.com
+                </div>
+            </div>
+            <div class="last-display2">
+                <div class="last-display2-head" data-aos="fade-down">
+                    <h1>Feane</h1>
+                </div>
+                <div class="last-display2-content" data-aos="fade-down">
+                    <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                        Latin words, combined with</p>
+                </div>
+                <div class="last-display2-icons" data-aos="flip-right">
+                    <a href="/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="/"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="last-display3" data-aos="fade-down">
+                <div class="last-display3-head" data-aos="flip-up">
+                    <h1>Opening Hours</h1>
+                </div>
+                <div class="everyday">
+                    <p>Everyday</p>
+                </div>
+                <div class="time10">
+                    <p>10.00 Am -10.00 Pm</p>
+                </div>
+            </div>
+        </div>
+        <div class="div-for-last-text">
+            <div class="rights-text">
+                <p>© 2025 All Rights Reserved By Free Html Templates</p>
+            </div>
+            <div class="distribution-text">
+                <p>© Distributed By <span><a href="/">ThemeWagon</a></span></p>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+        <script>
+            $('#owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                dots: false,
+                nav: true,
+                items: 2,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    320: {
+                        items: 1
+                    },
+                    552: {
+                        items: 1
+                    },
+                    769: {
+                        items: 2
+                    },
+                }
+            })
+        </script>
+        <script>
+            $('#owl-carousel-cover').owlCarousel({
+                loop: true,
+                margin: 30,
+                dots: true,
+                nav: false,
+                items: 1,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+            })
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>
