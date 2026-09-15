@@ -848,6 +848,10 @@ iframe {
         position: absolute;
         left: 0;
     }
+
+    .last-display2-icons{
+        margin-top: 26px;
+    }
 }
 
 @media (max-width:986px) {
